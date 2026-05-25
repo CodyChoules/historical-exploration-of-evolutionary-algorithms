@@ -2,7 +2,7 @@
 
 Unified repository for the WGU C964 Computer Science Capstone: Lamarckian/Darwinian optimization visualization, experiment tooling, and submission documentation.
 
-**GitHub:** [mostdefinitelynotcody/historical-exploration-of-evolutionary-algorithms](https://github.com/mostdefinitelynotcody/historical-exploration-of-evolutionary-algorithms)
+**GitHub:** [CodyChoules/historical-exploration-of-evolutionary-algorithms](https://github.com/CodyChoules/historical-exploration-of-evolutionary-algorithms)
 
 > **Location:** `C:\Users\codyc\CsProjects\LAMARCK_MANIM`  
 > This folder is separate from `wgu\lamarck_manim` because Windows treats `LAMARCK_MANIM` and `lamarck_manim` as the same path (case-insensitive).
