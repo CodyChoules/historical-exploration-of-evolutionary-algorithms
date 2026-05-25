@@ -1,0 +1,10 @@
+experiment_id: logger_smoke_test
+experiment_name: Logger Smoke Test
+logged_utc: 2026-03-01T00:27:53.104955+00:00
+
+info_panel:
+- line one
+- line two
+
+copied_visualizations:
+- none

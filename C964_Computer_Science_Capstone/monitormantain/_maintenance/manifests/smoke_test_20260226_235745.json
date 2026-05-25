@@ -1,0 +1,120 @@
+{
+  "timestamp_utc": "2026-02-26T23:57:45.307974+00:00",
+  "command": "smoke_test",
+  "params": {
+    "seeds": [
+      7
+    ],
+    "call_budget": 15,
+    "primary_metric": "best_fitness"
+  },
+  "artifacts": [],
+  "extra": {
+    "run_started": "2026-02-26T23:57:45.305974+00:00",
+    "run_finished": "2026-02-26T23:57:45.306974+00:00",
+    "evaluation": {
+      "n_runs": 1,
+      "seeds": [
+        7
+      ],
+      "primary_metric": "best_fitness",
+      "confidence": 0.95,
+      "per_seed": [
+        {
+          "seed": 7,
+          "lamarckian": {
+            "best_fitness": 35.280189342778044,
+            "mean_fitness": 41.77034597095308,
+            "distance_to_optimum": 20.049939489304958,
+            "function_calls": 16
+          },
+          "darwinian": {
+            "best_fitness": 1.294606621585115,
+            "mean_fitness": 9.73352467164364,
+            "distance_to_optimum": 0.25015925431816977,
+            "function_calls": 32
+          },
+          "primary_metric": "best_fitness",
+          "winner": "darwinian"
+        }
+      ],
+      "aggregate": {
+        "lamarckian": {
+          "best_fitness": {
+            "n": 1.0,
+            "mean": 35.280189342778044,
+            "std": 0.0,
+            "ci_low": 35.280189342778044,
+            "ci_high": 35.280189342778044
+          },
+          "mean_fitness": {
+            "n": 1.0,
+            "mean": 41.77034597095308,
+            "std": 0.0,
+            "ci_low": 41.77034597095308,
+            "ci_high": 41.77034597095308
+          },
+          "distance_to_optimum": {
+            "n": 1.0,
+            "mean": 20.049939489304958,
+            "std": 0.0,
+            "ci_low": 20.049939489304958,
+            "ci_high": 20.049939489304958
+          },
+          "function_calls": {
+            "n": 1.0,
+            "mean": 16.0,
+            "std": 0.0,
+            "ci_low": 16.0,
+            "ci_high": 16.0
+          }
+        },
+        "darwinian": {
+          "best_fitness": {
+            "n": 1.0,
+            "mean": 1.294606621585115,
+            "std": 0.0,
+            "ci_low": 1.294606621585115,
+            "ci_high": 1.294606621585115
+          },
+          "mean_fitness": {
+            "n": 1.0,
+            "mean": 9.73352467164364,
+            "std": 0.0,
+            "ci_low": 9.73352467164364,
+            "ci_high": 9.73352467164364
+          },
+          "distance_to_optimum": {
+            "n": 1.0,
+            "mean": 0.25015925431816977,
+            "std": 0.0,
+            "ci_low": 0.25015925431816977,
+            "ci_high": 0.25015925431816977
+          },
+          "function_calls": {
+            "n": 1.0,
+            "mean": 32.0,
+            "std": 0.0,
+            "ci_low": 32.0,
+            "ci_high": 32.0
+          }
+        }
+      },
+      "comparison": {
+        "lamarckian_wins": 0,
+        "darwinian_wins": 1,
+        "ties": 0,
+        "lamarckian_win_rate": {
+          "value": 0.0,
+          "ci_low": 0.0,
+          "ci_high": 0.0,
+          "n": 1
+        }
+      },
+      "assumptions": {
+        "mean_confidence_intervals": "Normal approximation (z-score).",
+        "win_rate_confidence_interval": "Normal approximation for binomial proportion."
+      }
+    }
+  }
+}

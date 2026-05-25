@@ -1,0 +1,34 @@
+experiment_id: md2_20260228_181138_cab39557
+experiment_name: MD2 - Meta-optimized (Darwinian-tuned) Lamarckian vs Darwinian
+logged_utc: 2026-03-01T01:12:31.072755+00:00
+
+info_panel:
+- [Experimental Reproducibility Information]
+- Experiment:
+- MD2 - Meta-optimized (Darwinian-tuned) Lamarckian vs Darwinian
+- Experiment ID: md2_20260228_181138_cab39557
+- Seeds: [7, 67]
+- Call budget: 10
+- Topology: Rastrigin
+- Initial bounds: [-12.0, 12.0] x [-12.0, 12.0]
+- Final performance metrics:
+- Lamarckian: best_f avg=0.0004766, min=8.381e-05; dist avg=2.072, min=1.072
+- Darwinian: best_f avg=20.58, min=18.7; dist avg=15.96, min=15.67
+- Meta: calls=10, pop=100, gen=100, elite=10
+- Total organisms over run (Lamarckian, one seed): 6
+- Total organisms over run (Darwinian, one seed): 12
+- [Lamarckian levers]
+- seed=7: besoin_weight=0.5306655987378694, topology_gradient_scale=0.21650499201681608, magnitude_std_fraction=0.15520538158092784, magnitude_weight=0.7277924983284831, direction_std=0.2, min_magnitude=0.1, max_magnitude=10.0, num_offspring=2, first_generation_random_besoin=True
+- seed=67: besoin_weight=1.8150383785960331, topology_gradient_scale=0.20156647510071812, magnitude_std_fraction=0.8444629867635245, magnitude_weight=0.1551267423874766, direction_std=0.20405231612485628, min_magnitude=0.049702909491965985, max_magnitude=10.0, num_offspring=4, first_generation_random_besoin=False
+- [Darwinian levers]
+- seed=7: elimination_rate=0.2937817095253958, selection_pressure=8.317635254912037, mutation_std=2.0
+- seed=67: elimination_rate=0.2244584303632955, selection_pressure=7.1250405001910515, mutation_std=1.7219071244612296
+- [Performance]
+- seed=7: best_final_organism L=(-0.0018756437389644276, 0.0008405200139911528) d=0.002055362092049998, D=(-9.88558649767724, -8.368095105633419) d=12.951827519697154; final_mean L=1.2728091573605305, D=25.675125750194063
+- seed=67: best_final_organism L=(-0.0007857774490824809, -0.006573274074593627) d=0.006620073886235053, D=(-12.0, -8.95396212325317) d=14.97242257300576; final_mean L=4.042981493225122, D=26.749742590674412
+
+copied_visualizations:
+- md2_viz_2seeds_md2_20260228_181138_cab39557_ManimCE_v0.19.2.png
+- md2_20260228_181138_cab39557_best_candidates_bar.svg
+- md2_20260228_181138_cab39557_meta_trend_all_seeds.svg
+- md2_20260228_181138_cab39557_evaluation_report.txt

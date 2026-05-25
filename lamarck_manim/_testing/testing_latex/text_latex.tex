@@ -1,0 +1,104 @@
+\documentclass[11pt]{article}
+\usepackage[utf8]{inputenc}
+\usepackage{amsmath}
+\usepackage{graphicx}
+\usepackage{hyperref}
+\usepackage{paracol}
+
+\title{Sample LaTeX Document}
+\author{Your Name}
+\date{\today}
+
+\begin{document}
+
+\maketitle
+
+\section{Introduction}
+
+This is a simple example LaTeX document. LaTeX is a document preparation system for high-quality typesetting, commonly used for academic papers, books, and technical documentation.
+
+\section{Basic Formatting}
+
+You can use \textbf{bold}, \textit{italic}, and \underline{underline} text. Here's an inline math formula: $E = mc^2$.
+
+\section{Display Math}
+
+A displayed equation:
+
+\begin{equation}
+    \int_{-\infty}^{\infty} e^{-x^2} \, dx = \sqrt{\pi}
+\end{equation}
+
+\section{Lists}
+
+\begin{itemize}
+    \item First item
+    \item Second item
+    \item Third item
+\end{itemize}
+
+\begin{enumerate}
+    \item Numbered item one
+    \item Numbered item two
+\end{enumerate}
+
+\section{Manim Visualization}
+
+Figures~\ref{fig:manim} and~\ref{fig:manim-v88} show 3D retro-style visualizations rendered with Manim Community Edition.
+
+\begin{figure}[htbp]
+    \centering
+    \includegraphics[width=0.8\textwidth]{media/images/lamarckian_functions/MyRetro3D_v186.png}
+    \caption{A Manim-rendered 3D visualization of Lamarckian evolution on a fitness surface.}
+    \label{fig:manim}
+\end{figure}
+
+\begin{figure}[htbp]
+    \centering
+    \includegraphics[width=0.8\textwidth]{media/images/retro_tester_2/MyRetro3D_v88.png}
+    \caption{Retro-style 3D graph visualization (MyRetro3D v88).}
+    \label{fig:manim-v88}
+\end{figure}
+
+\section{Parallel columns: English \& French (paracol)}
+
+Each column is separate material that continues on the next page in the \emph{same} column: left stays left, right stays right. Use \texttt{paracol}: write a chunk for the left column, then \texttt{\textbackslash switchcolumn}, then the matching chunk for the right column. Repeat; columns flow independently across pages.
+
+\subsection*{Little Red Riding Hood --- Le Petit Chaperon rouge}
+
+\begin{paracol}{2}
+
+% === LEFT COLUMN (English) ===
+Once upon a time there was a little girl who was called Little Red Riding Hood, because she had a red cloak with a hood. She lived in a village with her mother. One day her mother said: ``Here is a piece of cake and a bottle of wine. Take them to your grandmother. She is ill and weak, and they will do her good. Do not leave the path, and do not talk to strangers.''
+
+\switchcolumn
+
+% === RIGHT COLUMN (French) ===
+Il était une fois une petite fille qu'on appelait le Petit Chaperon rouge, parce qu'elle portait un manteau rouge à capuche. Elle habitait un village avec sa mère. Un jour sa mère lui dit : ``Voici un morceau de gâteau et une bouteille de vin. Porte-les à ta grand-mère. Elle est malade et faible, et cela lui fera du bien. Ne quitte pas le sentier et ne parle pas aux inconnus.''
+
+\switchcolumn
+
+% === LEFT (English) continued ===
+Little Red Riding Hood set off. Her grandmother lived in the woods, half an hour from the village. In the woods she met the Wolf. He did not eat her yet, because there were woodcutters nearby. He asked where she was going. She said: ``To my grandmother's house.'' --- ``Where does she live?'' --- ``Under the three big oak trees.''
+
+\switchcolumn
+
+% === RIGHT (French) continued ===
+Le Petit Chaperon rouge partit. Sa grand-mère habitait dans les bois, à une demi-heure du village. Dans les bois elle rencontra le Loup. Il ne la mangea pas encore, car des bûcherons étaient tout près. Il lui demanda où elle allait. Elle dit : ``Chez ma grand-mère.'' --- ``Où habite-t-elle?'' --- ``Sous les trois grands chênes.''
+
+\switchcolumn
+
+% Add more \switchcolumn pairs to keep the story going; each column flows to the next page in its own column.
+So the Wolf ran by the short path and the girl walked by the long path. The Wolf arrived first, knocked, and went in. What happened next you know. The point of this example is layout: the left column is one continuous thread (English), the right column another (French), and both run over as many pages as needed, each in its own column.
+
+\switchcolumn
+
+Le Loup prit donc le chemin le plus court et la fillette le plus long. Le Loup arriva le premier, frappa et entra. La suite, vous la connaissez. L'important ici est la mise en page : la colonne gauche est un fil continu (anglais), la droite un autre (français), et les deux s'étendent sur autant de pages qu'il faut, chacune dans sa colonne.
+
+\end{paracol}
+
+\section{Conclusion}
+
+Compile this file with \texttt{pdflatex text\_latex.tex} to produce a PDF.
+
+\end{document}

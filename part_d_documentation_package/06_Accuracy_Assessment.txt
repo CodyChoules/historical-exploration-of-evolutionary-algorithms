@@ -1,0 +1,40 @@
+Assessment of Product Accuracy
+
+Assessment Method
+Accuracy is assessed using the integrated evaluation pipeline:
+source:
+C:\Users\codyc\CsProjects\wgu\C964_Computer_Science_Capstone\optimizationlab\evaluation.py
+
+Primary Evaluation Dimensions
+1) best_fitness (primary metric, lower is better)
+2) mean_fitness
+3) distance_to_optimum
+4) function_calls
+
+Current Evidence Snapshot
+Source report:
+optimizationlab/_Experimental_Media/evaluation_reports/md2_20260226_173655_2a79fc1d_evaluation_report.txt
+
+Key results:
+- Lamarckian best_fitness mean: 0.583723
+- Darwinian best_fitness mean: 0.0221139
+- Lamarckian wins: 0
+- Darwinian wins: 1
+
+Interpretation
+- For the cited run, Darwinian produced more accurate optimization outcome on the primary metric.
+- Both algorithms remained within comparable call budgets.
+
+Verification Approach
+1) Repeat across multiple seeds.
+2) Use confidence interval summaries.
+3) Use reproducibility checks with fixed seeds/configurations.
+
+Accuracy Risks
+1) Single-run reports can overfit to run-specific randomness.
+2) Metric definition mismatch can cause interpretation errors if objective and report metric differ.
+
+Mitigations
+1) Enforce consistent objective metric and report metric in experiment setup.
+2) Store run metadata (seed, call budget, experiment ID) for audit trails.
+3) Use aggregate-over-seed reporting before making final recommendations.

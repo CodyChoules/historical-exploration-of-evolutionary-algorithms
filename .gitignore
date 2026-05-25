@@ -1,0 +1,68 @@
+# Virtual environments
+.venv/
+venv/
+env/
+manim.venv/
+manim-linux.venv/
+
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+build/
+develop-eggs/
+dist/
+eggs/
+*.egg-info/
+*.egg
+.mypy_cache/
+.pytest_cache/
+
+# Manim / render artifacts
+media/
+_final_media/
+**/mockmedia/
+**/_Experimental_Media/
+*.mp4
+*.avi
+*.mov
+*.mkv
+*.webm
+*.flv
+*.wmv
+
+# Images (generated renders)
+*.png
+*.jpg
+*.jpeg
+*.gif
+*.bmp
+*.tiff
+*.svg
+*.ico
+*.webp
+
+# LaTeX build artifacts
+*.aux
+*.fdb_latexmk
+*.fls
+*.log
+*.out
+*.synctex.gz
+
+# IDE / OS
+.idea/
+.vscode/
+.cursor/
+*.swp
+*.swo
+.DS_Store
+Thumbs.db
+
+# Nested git metadata
+**/.git/
+
+# Local tooling (not part of project)
+.tools/

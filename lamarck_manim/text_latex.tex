@@ -1,0 +1,74 @@
+\documentclass[11pt]{article}
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage[french,english]{babel}
+\usepackage{microtype}
+\usepackage{amsmath}
+\usepackage{graphicx}
+\usepackage{hyperref}
+
+\raggedbottom
+\makeatletter
+\def\@textbottom{\vskip \z@ \@plus 1fil \@minus 1fil}
+\makeatother
+
+\title{Sample LaTeX Document}
+\author{Your Name}
+\date{\today}
+
+\begin{document}
+
+\maketitle
+
+\section{Introduction}
+
+This is a simple example LaTeX document. LaTeX is a document preparation system for high-quality typesetting, commonly used for academic papers, books, and technical documentation.
+
+\section{Basic Formatting}
+
+You can use \textbf{bold}, \textit{italic}, and \underline{underline} text. Here's an inline math formula: $E = mc^2$.
+
+\section{Display Math}
+
+A displayed equation:
+
+\begin{equation}
+    \int_{-\infty}^{\infty} e^{-x^2} \, dx = \sqrt{\pi}
+\end{equation}
+
+\section{Lists}
+
+\begin{itemize}
+    \item First item
+    \item Second item
+    \item Third item
+\end{itemize}
+
+\begin{enumerate}
+    \item Numbered item one
+    \item Numbered item two
+\end{enumerate}
+
+\section{Manim Visualization}
+
+Figures~\ref{fig:manim} and~\ref{fig:manim-v88} show 3D retro-style visualizations rendered with Manim Community Edition.
+
+\begin{figure}[htbp]
+    \centering
+    \includegraphics[width=0.8\textwidth]{media/images/lamarckian_functions/MyRetro3D_v186.png}
+    \caption{A Manim-rendered 3D visualization of Lamarckian evolution on a fitness surface.}
+    \label{fig:manim}
+\end{figure}
+
+\begin{figure}[htbp]
+    \centering
+    \includegraphics[width=0.8\textwidth]{media/images/retro_tester_2/MyRetro3D_v88.png}
+    \caption{Retro-style 3D graph visualization (MyRetro3D v88).}
+    \label{fig:manim-v88}
+\end{figure}
+
+\section{Conclusion}
+
+Compile this file with \texttt{pdflatex text\_latex.tex} to produce a PDF.
+
+\end{document}

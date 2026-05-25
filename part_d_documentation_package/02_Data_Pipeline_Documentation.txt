@@ -1,0 +1,58 @@
+Raw and Cleaned Datasets + Scrape/Clean Code Documentation
+
+Requirement Mapping
+This section satisfies:
+"raw and cleaned datasets with the code and executable files used to scrape and clean data (if applicable)."
+
+In this project, the primary dataset is generated from a mathematical problem space rather than web-scraped records.
+Therefore, scraping is not applicable for baseline experiments. The data source is the benchmark surface set in:
+`C964_Computer_Science_Capstone/problemspace/surfacefunctions/__init__.py`
+
+Primary Dataset Justification (Problem Space as Data)
+1) Canonical dataset source: Rastrigin surface
+   - Function: rastrigin_func(u, v, A=10, n=2, scale=0.1)
+   - Output structure: [x, y, z], where z is fitness (objective value)
+   - Role in product: Generates the optimization landscape used by UP1, MD2, MDSINGLE, and LD4.
+   - Why this is a dataset: Each evaluated coordinate (x, y) with resulting z is a record in the experiment run data.
+
+2) Extensible benchmark problem sets
+   - rosenbrock_func
+   - ackley_func
+   - himmelblau_func
+   These functions are maintained in the same `problemspace` module and serve as alternate/extensible datasets
+   for future experiments and comparative analysis.
+
+Raw vs Cleaned Data in This Product
+1) Raw data (experiment event/run records)
+   - Example path: data/raw/experiment_runs_raw.jsonl
+   - Typical characteristics:
+     - string-encoded numerics
+     - inconsistent whitespace/format
+     - possible duplicate run entries
+
+2) Cleaned data (analysis-ready records)
+   - Example path: data/cleaned/experiment_runs_cleaned.json
+   - Typical characteristics:
+     - type-coerced numeric fields
+     - deduplicated records
+     - derived features for comparison reporting
+
+Code and Executable Files Used to Clean Data
+1) Cleaning module (project implementation)
+   - `C964_Computer_Science_Capstone/optimizationlab/data_pipeline.py`
+   - Core functions:
+     - load_dataset(...)
+     - clean_dataset(...)
+     - featurize_dataset(...)
+     - normalize_fields(...)
+     - prepare_for_experiment(...)
+
+2) Local executable usage
+   - Cleaning is executed through Python entry calls that invoke the above module functions.
+   - In this project context, no web-scrape executable is required because the primary source is problem-space generation.
+
+How this satisfies the requirement
+- Raw dataset: generated run records captured before cleaning.
+- Cleaned dataset: normalized, deduplicated, typed records produced by `data_pipeline.py`.
+- Code/executable for data preparation: implemented and runnable via the data pipeline module.
+- Scraping clause: "if applicable" -> not applicable to this product's baseline architecture.

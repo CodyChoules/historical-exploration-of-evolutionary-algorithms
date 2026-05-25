@@ -1,0 +1,52 @@
+Quick-Start Guide
+
+System Assumptions
+1) Windows environment
+2) Project already available at:
+   C:\Users\codyc\CsProjects\wgu\C964_Computer_Science_Capstone
+3) Python virtual environment already created at:
+   C:\Users\codyc\CsProjects\wgu\C964_Computer_Science_Capstone\manim.venv
+
+Install / Verify
+1) Open terminal in project root:
+   C:\Users\codyc\CsProjects\wgu\C964_Computer_Science_Capstone
+2) Install dependencies if needed:
+   .\manim.venv\Scripts\python.exe -m pip install -r requirements.txt
+
+Run Core Product (CLI)
+1) Execute MD2 sample run:
+   .\manim.venv\Scripts\python.exe optimizationlab\vizualize_experiment.py --experiment md2 --seed 229
+
+2) Optional multi-seed run:
+   .\manim.venv\Scripts\python.exe optimizationlab\vizualize_experiment.py --experiment md2 --seeds 7,27,107
+
+Run Browser UI
+1) From project root:
+   .\manim.venv\Scripts\python.exe ui\app.py
+2) Open:
+   http://127.0.0.1:8765
+3) Submit run form and review:
+   - status panel
+   - live output logs
+   - generated artifacts
+
+Key Output Locations
+1) Evaluation reports:
+   optimizationlab\_Experimental_Media\evaluation_reports\
+2) Bar charts:
+   optimizationlab\_Experimental_Media\bar_charts\
+3) Meta trend charts:
+   optimizationlab\_Experimental_Media\meta_trends\
+
+Part D Data Cleaning Demo
+1) Open terminal in:
+   C:\Users\codyc\CsProjects\wgu\part_d_documentation_package
+2) Run:
+   scripts\run_clean_experiment_data.bat
+3) Inspect cleaned output:
+   data\cleaned\experiment_runs_cleaned.json
+
+Troubleshooting
+1) If imports fail, verify project path and virtual environment path.
+2) If outputs are missing, rerun with a known single seed before multi-seed.
+3) If UI appears idle, check live logs on the page for current phase.

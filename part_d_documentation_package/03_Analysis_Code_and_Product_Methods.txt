@@ -1,0 +1,60 @@
+Code Used for Data Analysis and Product Construction
+
+Descriptive Methods (what happened)
+1) Comparative summaries
+   source: C:\Users\codyc\CsProjects\wgu\C964_Computer_Science_Capstone\optimizationlab\run_comparison.py
+   outputs:
+   - best_fitness
+   - mean_fitness
+   - distance_to_optimum
+   - function_calls
+
+2) Aggregated evaluation reports
+   source: C:\Users\codyc\CsProjects\wgu\C964_Computer_Science_Capstone\optimizationlab\evaluation.py
+   outputs:
+   - per-seed comparisons
+   - confidence interval summaries
+   - wins/losses/ties
+
+Nondescriptive Method (predictive/prescriptive)
+1) Prescriptive meta-optimization
+   source:
+   - optimizationlab/experimentalsetup/run_MD2.py
+   - optimizationlab/experimentalsetup/run_TSP3.py
+   method:
+   - optimize algorithm levers to improve target objective under call budget constraints
+   outcome:
+   - recommended lever settings for subsequent main runs
+
+Data Product Construction Code
+1) Experiment orchestration
+   source: optimizationlab/vizualize_experiment.py
+   function:
+   - command-line selection of experiment type and parameters
+   - run/load/save results
+   - generate evaluation report and visualization artifacts
+
+2) Visualization layer
+   source:
+   - vizualizationtool/vizualization.py
+   - vizualizationtool/bar_charts.py
+   - vizualizationtool/meta_trends.py
+   function:
+   - 3D views and overlays
+   - bar chart comparison
+   - meta trend line chart
+
+3) Dashboard interface
+   source: ui/app.py
+   function:
+   - browser-based run form
+   - live status/log output
+   - artifact display
+
+4) Data preparation module
+   source: optimizationlab/data_pipeline.py
+   function:
+   - load, clean, featurize, normalize datasets
+
+Result
+The product combines descriptive analytics and prescriptive optimization to support algorithm-choice decisions with traceable evidence.

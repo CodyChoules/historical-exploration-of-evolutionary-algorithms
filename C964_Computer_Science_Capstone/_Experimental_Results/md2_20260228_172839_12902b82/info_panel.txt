@@ -1,0 +1,31 @@
+experiment_id: md2_20260228_172839_12902b82
+experiment_name: MD2 - Meta-optimized (Darwinian-tuned) Lamarckian vs Darwinian
+logged_utc: 2026-03-01T00:29:22.405971+00:00
+
+info_panel:
+- [Experimental Reproducibility Information]
+- Experiment:
+- MD2 - Meta-optimized (Darwinian-tuned) Lamarckian vs Darwinian
+- Experiment ID: md2_20260228_172839_12902b82
+- Seeds: [7]
+- Call budget: 10
+- Topology: Rastrigin
+- Initial bounds: [-12.0, 12.0] x [-12.0, 12.0]
+- Final performance metrics:
+- Lamarckian: best_f=8.381e-05, dist=1.072
+- Darwinian: best_f=18.7, dist=15.67
+- Meta: calls=10, pop=100, gen=100, elite=10
+- Total organisms over run (Lamarckian, one seed): 6
+- Total organisms over run (Darwinian, one seed): 12
+- [Lamarckian levers]
+- seed=7: besoin_weight=0.5306655987378694, topology_gradient_scale=0.21650499201681608, magnitude_std_fraction=0.15520538158092784, magnitude_weight=0.7277924983284831, direction_std=0.2, min_magnitude=0.1, max_magnitude=10.0, num_offspring=2, first_generation_random_besoin=True
+- [Darwinian levers]
+- seed=7: elimination_rate=0.2937817095253958, selection_pressure=8.317635254912037, mutation_std=2.0
+- [Performance]
+- seed=7: best_final_organism L=(-0.0018756437389644276, 0.0008405200139911528) d=0.002055362092049998, D=(-9.88558649767724, -8.368095105633419) d=12.951827519697154; final_mean L=1.2728091573605305, D=25.675125750194063
+
+copied_visualizations:
+- md2_viz_1seed_md2_20260228_172839_12902b82_ManimCE_v0.19.2.png
+- md2_20260228_172839_12902b82_best_candidates_bar.svg
+- md2_20260228_172839_12902b82_meta_trend_all_seeds.svg
+- md2_20260228_172839_12902b82_evaluation_report.txt

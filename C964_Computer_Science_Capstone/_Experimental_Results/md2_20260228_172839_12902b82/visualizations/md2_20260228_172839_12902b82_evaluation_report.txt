@@ -1,0 +1,22 @@
+Evaluation Report
+================================================================================
+Runs: 1 | Primary metric: best_fitness | Confidence: 95%
+
+Primary-metric comparison
+--------------------------------------------------------------------------------
+Lamarckian wins: 1 | Darwinian wins: 0 | Ties: 0
+Lamarckian win rate: 1.000 (CI 1.000 to 1.000)
+
+Aggregate metrics (mean and CI)
+--------------------------------------------------------------------------------
+Lamarckian
+  best_fitness: mean=8.38102e-05, std=0, CI=[8.38102e-05, 8.38102e-05], n=1.0
+  mean_fitness: mean=1.27281, std=0, CI=[1.27281, 1.27281], n=1.0
+  distance_to_optimum: mean=1.0722, std=0, CI=[1.0722, 1.0722], n=1.0
+  function_calls: mean=16, std=0, CI=[16, 16], n=1.0
+
+Darwinian
+  best_fitness: mean=18.6982, std=0, CI=[18.6982, 18.6982], n=1.0
+  mean_fitness: mean=25.6751, std=0, CI=[25.6751, 25.6751], n=1.0
+  distance_to_optimum: mean=15.6664, std=0, CI=[15.6664, 15.6664], n=1.0
+  function_calls: mean=12, std=0, CI=[12, 12], n=1.0

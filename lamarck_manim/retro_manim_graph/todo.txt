@@ -1,0 +1,16 @@
+--Line variance in contours. 
+--Faster contour line gen
+-modularize the retro functions
+include animation of process
+projections of vectors onto the surface
+set optima dash marks
+--make sure vectors are on top of the contour layer
+--fix rendering issue with contour lines using 
+genetic function for comparison
+meta evolution for both
+explore how to use gpu processing for parrallism
+explore a mock latex formated paper presentation 
+
+allow for multiple lamarckian functions to simultaniusly run and display
+fine tune the lemarckian function
+--implement a seed for reproducibility 

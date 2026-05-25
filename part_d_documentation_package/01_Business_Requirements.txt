@@ -1,0 +1,49 @@
+Business Vision / Business Requirements Document
+
+Business Vision
+Develop a decision-support data product that compares evolutionary optimization strategies, explains algorithm behavior through visuals, and provides reproducible evidence for selecting algorithm configurations under constrained compute budgets.
+
+Business Problem
+Technical teams need a reliable way to choose between Lamarckian and Darwinian optimization strategies. Ad hoc experimentation often lacks reproducibility, consistent reporting, and clear artifact traceability.
+
+Target Users
+1) IT and software professionals implementing optimization workflows
+2) Data/ML practitioners evaluating optimization methods
+3) Evaluators who need evidence of requirement compliance and repeatability
+4) Maintainers extending problem spaces and experiment configurations
+
+Product Requirements
+1) Decision support
+   - Compare algorithm performance using standardized metrics.
+   - Provide recommendation-ready outputs by seed and aggregate.
+2) Data handling
+   - Support parsing, cleaning, featurizing, and normalization workflows.
+3) Interactive operation
+   - Enable CLI-driven experiment selection and execution parameters.
+   - Provide local UI interaction for run control and artifact review.
+4) Visualization
+   - Provide at least three visualization types for exploration and inspection.
+5) Accuracy assessment
+   - Produce explicit evaluation reports with confidence intervals and comparisons.
+6) Security and operations
+   - Validate paths, constrain data I/O, and retain logs/manifests for operations.
+7) Maintainability
+   - Use modular code organization and reusable helpers for core capabilities.
+
+Success Criteria
+1) End users can run an experiment and obtain:
+   - run logs
+   - visual artifacts
+   - evaluation report
+2) Results are reproducible under fixed seeds and controlled call budgets.
+3) Deliverables satisfy Part D evidence requirements.
+
+Scope
+In scope:
+- evolutionary experiment workflows (UP1, MD2, MDSINGLE, LD4, TSP3)
+- visual and textual decision-support outputs
+- local execution with no external service dependency
+
+Out of scope:
+- cloud deployment and multi-tenant web authentication
+- enterprise data warehouse integrations

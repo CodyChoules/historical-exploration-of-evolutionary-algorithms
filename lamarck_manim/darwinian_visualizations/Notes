@@ -1,0 +1,11 @@
+Retro graph (axes, tick labels, axis titles)
+Font: Courier New
+Set in retro_manim_graph/_config_data.py as the default "font_family": "Courier New".
+The scene’s FONT_FAMILY is set by get_default_class_config() in retro_configuration.py to "Courier New", and construct_retro_style_scene uses that for axis labels and axis titles (e.g. “X TRAIT”, “Y TRAIT”, “FITNESS”).
+
+Optimized Lamarckian info panel
+Font: Manim default
+The panel is built with Text(..., font_size=18, color=BLACK, ...) with no font= argument, so it uses Manim’s default font (often something like Sans-Serif or the default Text font), not Courier New.
+
+To run this on windows in the manim.env
+& "C:/Users/codyc/CsProjects/wgu/lamarck_manim/manim.venv/Scripts/python.exe" -m manim -qh --disable_caching "lamarck_visualizations/6optimized_lamarckian_functions.py" SixOptimizedLamarckianFunctions -s 

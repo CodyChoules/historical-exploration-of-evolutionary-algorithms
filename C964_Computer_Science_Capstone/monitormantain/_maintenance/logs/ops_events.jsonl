@@ -1,0 +1,2 @@
+{"timestamp_utc": "2026-02-26T23:57:43.858499+00:00", "event_type": "health_check", "status": "ok", "payload": {"passed": true, "n_checks": 8}}
+{"timestamp_utc": "2026-02-26T23:57:45.307974+00:00", "event_type": "smoke_test", "status": "ok", "payload": {"passed": true, "manifest_path": "monitormantain\\_maintenance\\manifests\\smoke_test_20260226_235745.json", "n_runs": 1}}

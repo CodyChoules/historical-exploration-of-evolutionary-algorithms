@@ -1,0 +1,11 @@
+_later_
+- Fix animation transition when a child becomes a vector
+- The labels need to move out of the way before the next animation
+- The random spawn points should also include the location of the final children
+- Slowly fade out older generations
+- Only show random point Generation on the first 2 generations. We will make the animation follow the narration: "this spawn area represents all possiple children the parents can spawn. Out of the palethra of options we will only show 2." Then the all other random points but 2 will dissapear and these two will be the origin of the child organisms
+
+_now_ 
+- implement the besoin vector
+- draw the spawn quadraliteral so that there is never a bow tie. in the event that the vectors cross they are not
+- We need a representative for the phenotypes as they change over time. A giraffe's neck will be our example.

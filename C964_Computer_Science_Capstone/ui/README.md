@@ -1,0 +1,2 @@
+The app module serves to launch an UI interface for the user or evaluator to cunduct experiments.
+Its naming convention follows a simple numeric value where app1 was the first version app2 was the second and so on, with the current version named simply app.py

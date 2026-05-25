@@ -1,0 +1,182 @@
+\documentclass[11pt]{article}
+
+% ---------- Encoding and fonts ----------
+\usepackage{iftex}
+\ifPDFTeX
+    \usepackage[T1]{fontenc}
+    \usepackage[utf8]{inputenc}
+    \usepackage{lmodern}
+\else
+    \usepackage{fontspec}
+    % Use Courier New for \texttt (figure title styling), with safe fallbacks.
+    \IfFontExistsTF{Courier New}
+        {\setmonofont{Courier New}}
+        {\IfFontExistsTF{Liberation Mono}
+            {\setmonofont{Liberation Mono}}
+            {\setmonofont{TeX Gyre Cursor}}}
+\fi
+
+% ---------- Page layout ----------
+\usepackage[a4paper,margin=1in]{geometry}
+\usepackage{setspace}
+\onehalfspacing
+
+% ---------- Math and symbols ----------
+\usepackage{amsmath,amssymb,amsthm}
+\usepackage{siunitx}
+
+% ---------- Figures and tables ----------
+\usepackage{graphicx}
+\usepackage{float}
+\usepackage{booktabs}
+\usepackage{caption}
+\usepackage{subcaption}
+
+% ---------- Utilities ----------
+\usepackage{enumitem}
+\usepackage{xcolor}
+\usepackage{hyperref}
+\hypersetup{
+    colorlinks=true,
+    linkcolor=blue,
+    citecolor=blue,
+    urlcolor=blue,
+    pdftitle={Paper Title},
+    pdfauthor={Author Name}
+}
+
+% ---------- Optional line numbering (for submissions) ----------
+% \usepackage{lineno}
+% \linenumbers
+
+% ---------- Title information ----------
+\title{An Exploration of a Pure, Historically Inspired Lamarckian Algorithms}
+\author{
+    Cody Choules$^{1}$ 
+}
+\date{
+    $^{1}$Department of Computer Science, University of California, Davis, Davis, CA, WGU\\
+    \today
+}
+
+% ---------- Custom commands ----------
+\newcommand{\todo}[1]{\textcolor{red}{TODO: #1}}
+\newcommand{\keyword}[1]{\textbf{#1}}
+
+\begin{document}
+
+\maketitle
+
+\begin{abstract}
+This template provides a standard structure for a scientific academic paper.
+Replace this text with a brief summary of: (1) the problem, (2) approach,
+(3) main results, and (4) implications. Keep the abstract concise and specific.
+\end{abstract}
+
+\noindent\textbf{Keywords:} keyword1; keyword2; keyword3
+
+\section{Introduction}
+\subsection{Background}
+Briefly describe the domain context and why the problem matters.
+
+\subsection{Problem Statement}
+State the research question and objectives clearly.
+
+\subsection{Contributions}
+List your main contributions:
+\begin{enumerate}[label=(\arabic*)]
+    \item Contribution one.
+    \item Contribution two.
+    \item Contribution three.
+\end{enumerate}
+
+\section{Related Work}
+Summarize prior work and position your approach relative to existing methods.
+Use citations throughout, e.g., \cite{example2020}.
+
+\section{Methods}
+\subsection{Study Design / Experimental Setup}
+Describe data, assumptions, and protocol.
+
+\subsection{Model / Algorithm}
+Describe the proposed method in enough detail for reproducibility.
+
+Example equation:
+\begin{equation}
+    y = f(x; \theta) = \theta_0 + \theta_1 x
+    \label{eq:example}
+\end{equation}
+
+\subsection{Implementation Details}
+Document software versions, hyperparameters, compute resources, and seeds.
+
+\section{Results}
+\subsection{Primary Results}
+Present core findings with quantitative metrics.
+
+Example table:
+\begin{table}[h]
+    \centering
+    \caption{Example quantitative comparison.}
+    \label{tab:results}
+    \begin{tabular}{lcc}
+        \toprule
+        Method & Metric A ($\uparrow$) & Metric B ($\downarrow$) \\
+        \midrule
+        Baseline & 0.00 & 0.00 \\
+        Proposed & 0.00 & 0.00 \\
+        \bottomrule
+    \end{tabular}
+\end{table}
+
+Example figure:
+\begin{figure}[H]
+    \centering
+    \makebox[\textwidth][c]{\includegraphics[width=1.15\textwidth]{../lamarck_visualizations/fav_images/FAV_images/SixOptimizedLamarckianFunctions_ManimCE_v0.19.2.png}}
+    \caption{\texttt{Six Pure Lamarckian Algorithms Exploring an Adaptive Surface Generated from a Rastrigin Function after Optimization from a Genetic Algorithm}$^{1}$}
+    \label{fig:example}
+\end{figure}
+\footnotetext[1]{The meta-application of applying an evolutionary algorithm to the Lamarckian algorithm is itself a parameter problem. In this case, optimizing the parameters of the besoin, gradient, normal distribution of stochastic differentiation, \& magnitude inheritance weights. By tuning these values, we can drastically improve the function's performance and give our algorithms a more reasonable metric to measure against. Also consider the interesting parallel of phenotypical expression of genotypes and their relationship to fitness measures (page 34 of Thomas Bäck's book "Evolutionary Algorithms in Theory and Practice").}
+
+\subsection{Ablations / Sensitivity}
+Include controlled comparisons to explain behavior and robustness.
+
+\section{Discussion}
+\subsection{Interpretation}
+Explain what the results mean and how they answer the research question.
+One could consider this interaction with the landscape akin to a ball with momentum in a rastrigin bowl, where the first organism vectors are the initial velocity of the ball and the repeted stochastic combination of the parents are akin to shaking the bowl back and forth allowing the ball to settle past local optima.
+
+Explore The No Free Lunch (NFL) Theorem, first formalized by David Wolpert \& William Macready in 1997, is a fundamental principle in mathematical optimization \& machine learning. It essentially states that no single optimization algorithm is universally superior to all others across every possible problem.
+
+\subsection{Limitations}
+Describe constraints, threats to validity, and practical caveats.
+
+\subsection{Future Work}
+Outline concrete next steps.
+- Explore meta Lamarckian optimization of the Lamarckian algorithm. via lam to lam, lam to dar, or lam to grad.
+- Add recursive lanscape relationship where the organisms change their own fitness landscape akin to the summary by Schull (page  11 of Back for reference). In this case it would likely be best to have the organism inrease the local landscape. 
+- add a dynamic multi-dimensional landscape with many moving peaks.
+
+\section{Conclusion}
+Re-state the main takeaways and broader significance in 1--2 paragraphs.
+
+\section*{Data and Code Availability}
+Provide repository/data links and access conditions.
+
+\section*{Acknowledgments}
+Acknowledge funding, collaborators, and other support.
+List mentors.
+
+
+\begin{thebibliography}{99}
+\bibitem{example2020}
+Author, A.; Author, B.
+\newblock Title of the referenced work.
+\newblock \emph{Journal Name}, 2020.
+\end{thebibliography}
+
+\appendix
+\section{Appendix (Optional)}
+Additional derivations, tables, or implementation notes.
+
+\end{document}

@@ -1,0 +1,45 @@
+Hypothesis Assessment (Acceptance / Rejection)
+
+Context
+Primary comparison objective is minimization performance under matched seed and call-budget constraints.
+
+Hypothesis H1
+"Meta-optimized Darwinian (MD2) achieves lower best_fitness than Lamarckian for the evaluated run."
+
+Evidence
+Source report:
+C:\Users\codyc\CsProjects\wgu\C964_Computer_Science_Capstone\optimizationlab\_Experimental_Media\evaluation_reports\md2_20260226_173655_2a79fc1d_evaluation_report.txt
+
+Observed values (n=1):
+- Lamarckian best_fitness: 0.583723
+- Darwinian best_fitness: 0.0221139
+
+Decision
+H1 accepted for the evaluated run because Darwinian best_fitness is lower.
+
+Hypothesis H2
+"Both algorithms operate under comparable computational budgets in the test configuration."
+
+Evidence
+From same report:
+- Lamarckian function_calls mean: 108
+- Darwinian function_calls mean: 100
+
+Decision
+H2 accepted as practically comparable budget usage for this run.
+
+Hypothesis H3
+"The data product generates decision-support artifacts sufficient for interpretation."
+
+Evidence
+- evaluation report text generated
+- bar chart generated
+- meta trend chart generated
+- UI supports live output and artifact viewing
+
+Decision
+H3 accepted.
+
+Limitations
+- The cited report is single-run (n=1), so conclusions are run-specific.
+- Multi-seed and repeated-run evaluation is recommended for stronger generalization.

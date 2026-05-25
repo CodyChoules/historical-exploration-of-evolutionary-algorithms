@@ -1,0 +1,11 @@
+Notes:
+
+plan
+make simple static initial condition enviroment with the canadates varying in a set of levers but the same seed and starting position. first measure the mean as that is an easy benchmark. this wont work well for the darwinian functions. then we will need to research other benchmarks for our fitness such as end state, cluster/pseudo-species performance, time to convergence by generation<terminated by magnitude falling below a threshold for a given num of gen or cluster reaching a certain concentration>,
+
+Meta-optimization criterion: all meta runs judge by the mean of the final organisms (distance of that mean to optimum). Lamarckian: mean of endpoints in last gen; Darwinian: mean of all organism points in last gen (full population, not just survivors). See summarize_final_state in core.py.
+
+Measuring calculations (topology/fitness evaluations):
+- Use CountedFunction from meta_evolution_functions: wrap your topology (e.g. rastrigin_func) and pass the wrapper to pure_darwinian_function / pure_lamarckian_function (or run_*_with_levers). After the run, read wrapper.n_calls.
+- Darwinian: 1 evaluation per organism per generation → total = num_generations * population_size (per seed).
+- Lamarckian: gradient uses 4 evaluations per child (finite differences) → total = num_generations * num_offspring * 4 (per seed). 

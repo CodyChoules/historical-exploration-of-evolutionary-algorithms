@@ -1,0 +1,176 @@
+Executive Summary for IT Professionals
+
+Project Context
+This data product supports comparative decision-making for optimization strategy selection in computational search tasks. The system evaluates and visualizes Lamarckian and Darwinian evolutionary approaches, plus meta-optimization variants, under controlled conditions. The objective is to provide a repeatable, inspectable framework that helps technical stakeholders determine which algorithm configuration is most effective for a given scenario and computational budget.
+
+1) Decision Support Problem / Opportunity
+The core decision support problem is selecting the most appropriate optimization strategy when multiple evolutionary methods produce variable outcomes depending on seed, parameterization, and call budget.
+
+This product solves that by providing:
+standardized experiment orchestration
+per-seed and aggregate performance reporting
+visual evidence (surface trajectories, contour context, trend lines, bar comparisons)
+reproducibility-focused execution and logging
+
+The opportunity is to reduce trial-and-error tuning time and improve confidence in algorithm choice by introducing structured experimentation and objective comparisons.
+
+2) Customers and Fit
+Primary customers:
+IT engineers implementing optimization workflows
+data science practitioners comparing algorithm families
+technical evaluators/instructors validating capstone requirements
+future maintainers extending optimization experiments
+
+Why this fulfills their needs:
+provides direct comparability between algorithm approaches
+supports interactive run configuration via CLI and local UI
+includes explainable artifacts (charts, run logs, evaluation reports)
+emphasizes reproducibility (seed control, call budgets, deterministic reporting outputs)
+
+3) Existing Gaps in Replaced/Modified Data Products
+This product addresses prior gaps common in ad hoc experimental scripts:
+fragmented modules and inconsistent imports after restructuring
+inconsistent visibility into run status and outputs
+limited explicit evaluation reporting across seeds
+duplicated topology logic across files (reduced maintainability)
+weak traceability of generated artifacts to specific runs
+
+Improvements implemented include modularized visualization helpers, centralized surface functions, run-level IDs and timestamps, and integrated evaluation report generation.
+
+4) Available / Required Data for Lifecycle Support
+Available data:
+experiment configuration inputs (experiment type, seeds, call budgets, options)
+generated algorithm outputs (per-generation populations/organisms and summaries)
+computed metrics (best fitness, mean fitness, distance to optimum, function calls)
+visualization artifacts (PNG/SVG images, trend graphs, bar charts)
+operational logs, manifests, and evaluation text reports
+
+Data to collect and retain through lifecycle:
+run metadata (experiment ID, start time, command, seed list)
+versioned parameter settings for replayability
+aggregate outcomes across runs for trend and regression monitoring
+maintenance and smoke-test evidence for operational health checks
+
+5) Methodology Guiding Design and Development
+The methodology follows an iterative, experiment-driven engineering cycle:
+1. Define hypothesis and success metrics.
+2. Run controlled experiments with fixed seeds and bounded call budgets.
+3. Compare methods using standardized metrics and confidence summaries.
+4. Inspect behavior via complementary visualizations.
+5. Refine configuration and design based on evidence.
+6. Validate reproducibility and operational reliability.
+
+This is supported by modular architecture (optimization logic, experiment setup, evaluation, visualization, UI, monitoring, and maintenance), enabling incremental updates without full-system rewrites.
+
+6) Deliverables
+Design and development deliverables include:
+modular experiment runners (UP1, MD2, MDSINGLE, LD4, TSP3)
+evaluation module for aggregate metrics and formatted reports
+data preparation utilities (load, clean, featurize, normalize)
+visualization outputs (3D render, contour/topology overlays, trend/bar SVGs)
+local UI for execution and artifact inspection with live status output
+documentation (README) mapping functionality to requirement criteria
+maintenance and monitoring scripts plus generated operational logs
+
+7) Implementation Plan and Anticipated Outcomes
+Implementation plan:
+finalize configurable experiment controls (CLI/UI options by experiment)
+execute baseline and comparative runs across representative seed sets
+generate reports and artifacts per run ID for traceability
+review outcomes and select recommended algorithm strategy by use case
+stabilize with smoke tests, health checks, and artifact retention practices
+
+Anticipated outcomes:
+faster, evidence-based optimizer selection
+improved reproducibility and auditability of computational experiments
+lower maintenance overhead from better modular structure
+clearer technical communication via standardized visual and textual outputs
+
+8) Validation and Verification Methods
+The product is validated and verified through:
+deterministic seeded reruns for reproducibility checks
+cross-algorithm comparisons on primary and supporting metrics
+confidence interval summaries across seeds for stability assessment
+artifact verification (expected files generated with experiment IDs and timestamps)
+smoke tests and health checks for runtime environment integrity
+manual inspection support through UI logs and visualization outputs
+
+Acceptance is based on meeting functional requirements, producing expected artifacts, and demonstrating consistent behavior under repeated seeded runs.
+
+9) Programming Environments, Costs, and Human Resources
+Programming environments:
+Python runtime with virtual environment management
+Manim-based rendering stack for visual outputs
+local HTTP server UI (standard library)
+filesystem-based logs and artifact storage
+
+Related costs:
+software stack uses open-source components (no mandatory licensing cost expected)
+infrastructure can run on local developer workstation
+main variable costs are compute time for higher call budgets and render workloads
+
+Human resources (typical small-team model):
+Data Product Lead / ML Engineer: algorithm design, metric strategy, experiment interpretation
+Software Engineer: architecture, module integration, UI/workflow implementation
+QA/Validation Engineer: reproducibility tests, smoke tests, artifact and requirement checks
+Technical Writer / Analyst: documentation, evaluator guidance, executive reporting
+
+10) Projected Timeline
+Project schedule reflects the stated execution window: start one week before February and complete on February 28.
+
+Milestone 1: Scope and requirements alignment
+Start: 2026-01-25
+End: 2026-01-28
+Duration: 4 days
+Dependencies: none
+Resources: Data Product Lead, Technical Writer
+
+Milestone 2: Architecture stabilization and import/module hardening
+Start: 2026-01-29
+End: 2026-02-03
+Duration: 6 days
+Dependencies: Milestone 1
+Resources: Software Engineer
+
+Milestone 3: Experiment pipeline and evaluation integration
+Start: 2026-02-04
+End: 2026-02-10
+Duration: 7 days
+Dependencies: Milestone 2
+Resources: ML Engineer, Software Engineer
+
+Milestone 4: Visualization and UI completion (live status, dark mode, artifacts)
+Start: 2026-02-11
+End: 2026-02-17
+Duration: 7 days
+Dependencies: Milestone 3
+Resources: Software Engineer
+
+Milestone 5: Validation cycle (repro checks, smoke tests, requirement verification)
+Start: 2026-02-18
+End: 2026-02-23
+Duration: 6 days
+Dependencies: Milestone 4
+Resources: QA Engineer, ML Engineer
+
+Milestone 6: Documentation and executive package finalization
+Start: 2026-02-24
+End: 2026-02-26
+Duration: 3 days
+Dependencies: Milestone 5
+Resources: Technical Writer, Data Product Lead
+
+Milestone 7: Final review and handoff
+Start: 2026-02-27
+End: 2026-02-28
+Duration: 2 days
+Dependencies: Milestone 6
+Resources: All roles
+
+Critical path dependencies:
+Milestones 2 to 5 are sequential for technical readiness.
+Milestone 6 requires validated results and stable artifact outputs.
+Milestone 7 depends on completion of all prior milestones.
+
+Closing Statement
+This data product provides IT professionals with a practical, auditable decision-support framework for optimization algorithm selection. By combining controlled experimentation, clear metrics, reproducible execution, and operational tooling, it reduces uncertainty in algorithm choice and supports maintainable long-term use.

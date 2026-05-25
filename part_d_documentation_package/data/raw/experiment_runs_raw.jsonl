@@ -1,0 +1,4 @@
+{"seed":" 229 ","experiment":"md2","lam_best":"0.583723","dar_best":"0.0221139","call_budget":"100","note":"first capture"}
+{"seed":" 229 ","experiment":"md2","lam_best":"0.583723","dar_best":"0.0221139","call_budget":"100","note":"duplicate row"}
+{"seed":"7","experiment":"up1","lam_best":"1.1040","dar_best":"0.4872","call_budget":"300","note":"baseline"}
+{"seed":"33","experiment":"md2","lam_best":"0.9132","dar_best":"0.1498","call_budget":"100","note":" "}

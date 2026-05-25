@@ -1,0 +1,43 @@
+Source Code and Executable Files
+
+Primary Source Code Locations
+Project root:
+C:\Users\codyc\CsProjects\wgu\C964_Computer_Science_Capstone
+
+Key modules:
+1) optimizationfunctions/evolutionalgorithms/
+   - core Lamarckian/Darwinian/meta-evolution methods
+2) optimizationlab/experimentalsetup/
+   - experiment runners: run_up1.py, run_MD2.py, run_MDSingle.py, run_LD4.py, run_TSP3.py
+3) optimizationlab/vizualize_experiment.py
+   - orchestration entry point
+4) optimizationlab/evaluation.py
+   - accuracy and reporting utilities
+5) optimizationlab/data_pipeline.py
+   - parsing/cleaning/featurizing/normalization
+6) vizualizationtool/
+   - visualization engine and chart generators
+7) ui/app.py
+   - local browser interface
+
+Executable Files and Entry Points
+1) Python environment executable
+   C:\Users\codyc\CsProjects\wgu\C964_Computer_Science_Capstone\manim.venv\Scripts\python.exe
+
+2) Product run command
+   python optimizationlab/vizualize_experiment.py --experiment md2 --seed 229
+
+3) UI run command
+   python ui/app.py
+
+4) Part D cleaning script executable
+   scripts/run_clean_experiment_data.bat
+
+5) Part D demo run executable
+   scripts/run_visualization_demo.bat
+
+Packaging Guidance
+For submission packaging, include:
+- complete source tree listed above
+- virtual environment/dependency instructions (requirements.txt)
+- this Part D documentation folder
